@@ -1,0 +1,53 @@
+﻿<Window x:Class="ChatApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChatApp" xmlns:viewmodel="clr-namespace:ChatClient.MVVM.ViewModel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="475" Width="810">
+    <Window.DataContext>
+        <viewmodel:MainViewModel />
+    </Window.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+
+        <DockPanel>
+            <TextBox Height="25" 
+                    DockPanel.Dock="Top"
+                    Text="{Binding Username}"/>
+            <Button Height="25"
+                   DockPanel.Dock="Top"
+                   Content="Connect"
+                   Command="{Binding ConnectToServerCommand}"/>
+            <ListView ItemsSource="{Binding Users}" Background="#FF1FDFED">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBox Text="{Binding Username}"></TextBox>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+        </DockPanel>
+        <StackPanel Grid.Column="1" Background="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}">
+            <ListView Height="380"
+                      ItemsSource="{Binding Messages}" Background="#FFB9D1EA"/>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBox Height="50"
+                         Width="530"
+                         VerticalContentAlignment="Center"
+                         Text="{Binding Message, UpdateSourceTrigger=PropertyChanged}"
+                         />
+                <Button Width="60" Height="50"
+                        Content="Send"
+                        Command="{Binding SendMessageCommand}"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
