@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gRCtpkxrix0iNeo1RbXWol5awCCxE/Ws7a7yiP6tDL6MUM+noChl0QLWJ9du51UyBXU3lIPTpEFyRdfR9GdhiQ==",
+  "dgSpecHash": "Y6dioQntOAWZgWWWzF5M4XzOcvbabpPEWXDWXdzUmtY3n1W0D90p+Wci3BGy37HGlPTbs1dFtsvREtFgAbKonQ==",
   "success": true,
-  "projectFilePath": "E:\\WorkSpace\\dotNet\\WPF\\Chat\\ChatApp\\ChatServer\\ChatServer.csproj",
+  "projectFilePath": "E:\\WorkSpace\\dotNet\\WPF_Git\\WPF\\Chat\\ChatApp\\ChatServer\\ChatServer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

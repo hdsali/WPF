@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\WorkSpace\\dotNet\\WPF\\Chat\\ChatApp\\ChatApp\\ChatClient.csproj",
+      "projectUniqueName": "E:\\WorkSpace\\dotNet\\WPF_Git\\WPF\\Chat\\ChatApp\\ChatApp\\ChatClient.csproj",
       "projectName": "ChatClient",
-      "projectPath": "E:\\WorkSpace\\dotNet\\WPF\\Chat\\ChatApp\\ChatApp\\ChatClient.csproj",
+      "projectPath": "E:\\WorkSpace\\dotNet\\WPF_Git\\WPF\\Chat\\ChatApp\\ChatApp\\ChatClient.csproj",
       "packagesPath": "C:\\Users\\hasalehi\\.nuget\\packages\\",
-      "outputPath": "E:\\WorkSpace\\dotNet\\WPF\\Chat\\ChatApp\\ChatApp\\obj\\",
+      "outputPath": "E:\\WorkSpace\\dotNet\\WPF_Git\\WPF\\Chat\\ChatApp\\ChatApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
